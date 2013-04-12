@@ -8,5 +8,6 @@
 	echo json_encode($unique_cate);
 	echo json_encode(array_values($unique_cate));
 	
-	//最后两条语句数据的数据是不一样，一个是object,一个是array 
+	//最后两条语句数据的数据是不一样，一个是object,一个是array
+    //测试github	
 ?>
