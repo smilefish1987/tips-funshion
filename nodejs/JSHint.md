@@ -7,10 +7,12 @@ JSHint ÊÇÒ»¸öJavascriptµÄ´úÂëÖÊÁ¿¼ì²é¹¤¾ß£¬Ö÷ÒªÓÃÀ´¼ì²é´úÂëÖÊÁ¿ÒÔ¼°ÕÒ³öÒ»Ğ©Ç±ÔÚµ
 °²×°jshint £º $npm install jshint -g
 
 °²×°Íêºó¿ÉÒÔÍ¨¹ıÃüÁîĞĞµÄ·½Ê½À´ÔËĞĞ£¬×î¼òµ¥µÄÊ¹ÓÃ·½Ê½¼ì²âµ¥¸öÎÄ¼şÈç¹û£º
+```js
 $ jshint myfile.js
 myfile.js : line 10 ,col 39,Octal literals are not allowed in strict mode.
 
 1 error
+```
 
 ##2.¹æÔòÅäÖÃÎÄ¼ş
 Ä¬ÈÏµÄÇé¿öÏÂJSHintÓĞÒ»¸öÄ¬ÈÏµÄ¾¯¸æºÍ´íÎó¹æÔòµÄ¼¯ºÏ£¬Õâ¸ö¹æÔòµÄ¼¯ºÏÊÇ¿ÉÅäÖÃµÄ£¬Ö÷ÒªÍ¨¹ıÁ½ÖÖ·½Ê½À´ÅäÖÃ¹æÔò£º
@@ -83,25 +85,34 @@ myfile.js:
 Äã¿ÉÒÔÊ¹ÓÃµ¥ĞĞ»ò¶àĞĞµÄ×¢ÊÍÀ´ÅäÖÃJSHint. ÕâĞ©×¢ÊÍÊÇº¯ÊıÓòµÄ£¬Ò²¾ÍÊÇËµÈç¹ûÄã°Ñ×¢ÊÍ·ÅÔÚº¯ÊıÀïÃæ¾ÍÖ»¶ÔÕâ¸öº¯ÊıÓĞĞ§¡£
 ×¢ÊÍÖĞ¿ÉÒÔÊ¹ÓÃµÄÖ¸Áî£º
 * jshint    ÓÃÀ´ÉèÖÃJSHintµÄ¹æÔòÑ¡Ïî 
-      ```js   
-      /* jshint strict: true */
-	  ```
+
+```js   
+    /* jshint strict: true */
+```
+	  
 * jslint     ÓÃÀ´ÉèÖÃ¼æÈİJSHintµÄjslintµÄ¹æÔòÑ¡Ïî    
-      ```js
-	  /* jslint vars: true */
-	  ```
+      
+```js
+	/* jslint vars: true */
+```
+	  
 *  globals   ÓÃÀ´¸æËßJSHintÔÚÆäËûµØ·½¶¨ÒåµÄJSHintÈ«¾Ö±äÁ¿£¬Èç¹ûÖµÊÇfalse£¨Ä¬ÈÏÖµ£©,JSHint»áÈÏÎª¸Ã±äÁ¿ÊÇÖ»¶ÁµÄ£¬²¢¶ÔËûÊ¹ÓÃundef¹æÔòÑ¡Ïî¼ì²é   
-      ```js   
-  	  /* global  MY_LIB : false */
-	  ```
+      
+```js   
+  	/* global  MY_LIB : false */
+```
+	  
    Ò²¿ÉÒÔÊ¹ÓÃºÚÃûµ¥Ñ¡ÏîÀ´È·¶¨ÔÚµ±Ç°ÎÄ¼şÖĞÃ»ÓĞÊ¹ÓÃÈÎºÎµÄÈ«¾Ö±äÁ¿      
-      ```js
-	 /*  global  -BAD_LIB */
-	 ```
+      
+```js
+	/*  global  -BAD_LIB */
+```
+	 
 *  exported   ÓÃÀ´¸æËßJSHintÈ«¾Ö±äÁ¿ÔÚµ±Ç°ÎÄ¼şÖĞ¶¨Òå£¬µ«ÊÇÔÚÆäËûµØ·½ÓĞÊ¹ÓÃ  
-     ```js    
+     
+```js    
 	/*  exported  EXPORTED_LIB  */
-	```
+```
 *  members   ÓÃÀ´¸æËßJSHintÄã´òËãÊ¹ÓÃµÄËùÓĞµÄÌØĞÔ£¬ÕâÌõÖ¸ÁîÒÑ¾­±»ÆôÓÃ
 
 ##6.JSHint ¹æÔòÑ¡Ïî
@@ -167,14 +178,16 @@ JSHintµÄ¹æÔòÑ¡ÏîÓĞÁ½Àà£¬Ò»ÀàÊÇÇ¿ÖÆÖ´ĞĞµÄ£¬ÁíÒ»ÀàÊÇ·ÇÇ¿ÖÆÖ´ĞĞµÄ¡£Ç°ÕßÊ¹JSHintÖ´ĞĞ
 * shadow          µ±´úÂëÖĞ³öÏÖÖØ¸´¶¨Òå±äÁ¿Ê±£¬¸ø³ö¾¯¸æ
 * sub             µ±´úÂëÖĞ³öÏÖÁËÔÚ¿ÉÒÔÊ¹ÓÃ.±í´ïÊ½µÄÊ±ºò£¬Ê¹ÓÃÁË[]±í´ïÊ½Ê±£¬¸ø³ö¾¯¸æ£¬±ÈÈç£ºperson['name'] VS person.name
 * supernew       µ±´úÂëÖĞ³öÏÖÁËÏñ£ºnew function(){...} ºÍ new Object£¬ÕâÖÖ¹ÖÒìµÄ¹¹ÔìÊ±¸ø³ö¾¯¸æ¡£ÔÚjavascriptÖĞÕâĞ©¹¹ÔìÓÃÓÚµ¥Àı
-                    ```js
+
+```js
 					var  singleton = new function(){
                          var  privateVar;
                          
                          this.publicMethod = function(){}
                          this.publicMethod2 = function(){}
                     };
-                    ```
+```
+
 * validthis        This option suppresses warnings about possible strict violations when the code is running in strict mode and you use this in a non-constructor function.
 
 ###»·¾³Ïà¹ØµÄ¹æÔòÑ¡Ïî£º
