@@ -171,5 +171,4 @@ passfail     这个选项使得JSHint在遇到第一个错误或警告时，停止执行
 white        This option make JSHint check your source code against Douglas Crockford's JavaScript coding style. Unfortunately, his “The Good Parts” book aside, the actual rules are not very well documented. 
 
 
-参考文档：
-http://www.jshint.com/docs/#confused 
+* 参考文档：http://www.jshint.com/docs/#confused 
